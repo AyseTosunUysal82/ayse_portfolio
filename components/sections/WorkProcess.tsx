@@ -1,8 +1,8 @@
-import { ClipboardList, Code2, PenTool, Rocket } from "lucide-react";
+import { BarChart3, ClipboardList, Database, Rocket } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { WORK_PROCESS } from "@/lib/content";
 
-const icons = [ClipboardList, PenTool, Code2, Rocket] as const;
+const icons = [ClipboardList, Database, BarChart3, Rocket] as const;
 
 export function WorkProcess() {
   return (
@@ -18,12 +18,12 @@ export function WorkProcess() {
               id="work-process-heading"
               className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
             >
-              Work Process
+              Arbeitsweise
             </h2>
             <p className="mt-5 text-base leading-relaxed text-slate-600">
-              A simple, repeatable loop keeps stakeholders aligned and quality
-              high. Each phase has clear deliverables so we always know what
-              comes next and why it matters.
+              Ein klarer Ablauf von Fragestellung bis Empfehlung — mit
+              nachvollziehbaren Zwischenschritten, damit Teams und Stakeholder
+              jederzeit den roten Faden sehen.
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2">

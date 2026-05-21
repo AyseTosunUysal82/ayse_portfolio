@@ -35,18 +35,18 @@ export function Navbar() {
     >
       <Container className="grid h-16 grid-cols-[1fr_auto] items-center gap-4 sm:h-20 lg:grid-cols-3">
         <Link
-          href="#home"
+          href="#start"
           className="flex items-center gap-2 font-semibold text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-600 focus-visible:ring-offset-2 rounded-lg justify-self-start"
           onClick={() => setOpen(false)}
         >
           <span className="flex h-9 w-9 items-center justify-center rounded-full bg-purple-600 text-sm font-bold text-white">
-            B
+            A
           </span>
-          <span className="text-lg tracking-tight">Brooklyn</span>
+          <span className="text-lg tracking-tight">Ayse Tosun</span>
         </Link>
 
         <nav
-          aria-label="Primary"
+          aria-label="Hauptnavigation"
           className="hidden items-center justify-center gap-8 text-sm font-medium text-slate-600 lg:flex"
         >
           {NAV_LINKS.map((item) => (
@@ -64,12 +64,12 @@ export function Navbar() {
           <Button
             className="px-5 py-2 text-sm"
             onClick={() => {
-              document.getElementById("contact")?.scrollIntoView({
+              document.getElementById("kontakt")?.scrollIntoView({
                 behavior: "smooth",
               });
             }}
           >
-            Hire Me
+            Kontakt
           </Button>
         </div>
 
@@ -81,7 +81,7 @@ export function Navbar() {
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          <span className="sr-only">Toggle menu</span>
+          <span className="sr-only">Menü öffnen oder schließen</span>
         </button>
       </Container>
 
@@ -105,12 +105,12 @@ export function Navbar() {
               className="mt-2 w-full"
               onClick={() => {
                 setOpen(false);
-                document.getElementById("contact")?.scrollIntoView({
+                document.getElementById("kontakt")?.scrollIntoView({
                   behavior: "smooth",
                 });
               }}
             >
-              Hire Me
+              Kontakt
             </Button>
           </div>
         </div>

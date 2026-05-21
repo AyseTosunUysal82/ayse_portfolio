@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BGPattern } from "@/components/ui/BGPattern";
 import { Container } from "@/components/ui/Container";
 
 const ctaBtnClass =
@@ -8,18 +9,24 @@ export function CtaBanner() {
   return (
     <section
       aria-labelledby="cta-heading"
-      className="bg-slate-900 py-16 sm:py-20"
+      className="relative overflow-hidden bg-slate-900 py-16 sm:py-20"
     >
-      <Container className="text-center">
+      <BGPattern
+        variant="grid"
+        mask="fade-edges"
+        size={32}
+        fill="rgba(255,255,255,0.08)"
+      />
+      <Container className="relative z-10 text-center">
         <h2
           id="cta-heading"
           className="mx-auto max-w-3xl text-2xl font-bold leading-snug text-white sm:text-3xl"
         >
-          Do you have Project Idea? Let&apos;s discuss your project!
+          Sie haben ein Datenprojekt? Lassen Sie uns sprechen.
         </h2>
         <div className="mt-8 flex justify-center">
-          <Link href="#contact" className={ctaBtnClass}>
-            Let&apos;s discuss
+          <Link href="#kontakt" className={ctaBtnClass}>
+            Kontakt aufnehmen
           </Link>
         </div>
       </Container>

@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Brooklyn Gilbert — Portfolio",
+  title: "Ayse Tosun — Data Analyst",
   description:
-    "Professional user interface designer portfolio — UI/UX, web, and app design.",
+    "Data Analyst mit ICT-Bachelor: E-Commerce-Daten, KPI, Reporting, SQL, Python und Power BI. Kontakt in Düren.",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full scroll-smooth antialiased`}>
+    <html lang="de" className={`${inter.variable} h-full scroll-smooth antialiased`}>
       <body className="min-h-full flex flex-col font-sans text-slate-900">
         {children}
       </body>

@@ -18,7 +18,7 @@ export function Portfolio() {
         <SectionHeading
           id="portfolio-heading"
           title="Portfolio"
-          subtitle="Selected work across product UI, marketing sites, and design systems."
+          subtitle="Ausgewählte Beispiele rund um Datenanalyse, Reporting und E-Commerce-Kennzahlen (Showcases)."
           align="center"
         />
 
@@ -44,11 +44,14 @@ export function Portfolio() {
                 <h3 className="mt-2 text-lg font-bold text-slate-900">
                   {item.title}
                 </h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                  {item.description}
+                </p>
                 <Link
-                  href="#"
+                  href="#kontakt"
                   className="mt-3 inline-block text-sm font-semibold text-purple-600 hover:text-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-600 rounded"
                 >
-                  Read More
+                  Mehr erfahren
                 </Link>
               </div>
             </article>
@@ -57,7 +60,7 @@ export function Portfolio() {
 
         <div className="mt-12 flex justify-center">
           <Link href="#portfolio" className={primaryBtnClass}>
-            See All
+            Alle anzeigen
           </Link>
         </div>
       </Container>

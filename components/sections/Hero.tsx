@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
+import TextType from "@/components/ui/TextType";
 
 const btnClass =
   "inline-flex items-center justify-center rounded-full bg-purple-600 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-600 focus-visible:ring-offset-2";
@@ -8,7 +9,7 @@ const btnClass =
 export function Hero() {
   return (
     <section
-      id="home"
+      id="start"
       aria-labelledby="hero-heading"
       className="relative pt-8 pb-16 sm:pt-12 sm:pb-20 lg:pt-16 lg:pb-24"
     >
@@ -17,40 +18,52 @@ export function Hero() {
           <div className="order-2 lg:order-1">
             <p
               id="hero-heading"
-              className="text-4xl font-normal leading-tight tracking-tight text-slate-800 sm:text-5xl lg:text-6xl"
+              className="m-0 text-4xl font-normal leading-tight tracking-tight text-slate-800 sm:text-5xl lg:text-6xl"
             >
-              Hello, I&apos;m{" "}
-              <span className="block font-bold text-slate-900">
-                Brooklyn Gilbert
-              </span>
+              <TextType
+                as="span"
+                text="Hallo, ich bin Ayse Tosun."
+                typingSpeed={55}
+                pauseDuration={2000}
+                deletingSpeed={30}
+                loop={false}
+                showCursor
+                cursorCharacter="▎"
+                cursorClassName="text-purple-500 font-light"
+                startOnVisible
+                className="text-inherit"
+              />
             </p>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">
-              I help teams ship intuitive interfaces and cohesive design systems.
-              From discovery to delivery, I focus on clarity, accessibility, and
-              measurable outcomes.
+              <strong>Data Analyst</strong> mit Bachelor{" "}
+              <strong>Informationstechnologie (ICT)</strong> — mit Erfahrung in
+              datengetriebenen <strong>E-Commerce</strong>-Prozessen, KPI und
+              Reporting. Aktuell vertiefe ich SQL, Python und Visualisierung im
+              intensiven <strong>Datenanalyse-Bootcamp</strong> bei{" "}
+              <strong>DataSmart Point</strong> (seit 12/2025, Remote).
             </p>
             <div className="mt-8">
-              <Link href="#contact" className={btnClass}>
-                Hire Me
+              <Link href="#kontakt" className={btnClass}>
+                Kontakt
               </Link>
             </div>
             <dl className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
               <div className="rounded-xl bg-purple-50 px-4 py-4 text-center sm:text-left">
-                <dd className="text-lg font-bold text-slate-900">12+</dd>
+                <dd className="text-lg font-bold text-slate-900">4+</dd>
                 <dt className="mt-1 text-sm font-medium text-slate-600">
-                  Experience
+                  Jahre E-Commerce-Daten &amp; KPI
                 </dt>
               </div>
               <div className="rounded-xl bg-purple-50 px-4 py-4 text-center sm:text-left">
-                <dd className="text-lg font-bold text-slate-900">150+</dd>
+                <dd className="text-lg font-bold text-slate-900">Bootcamp</dd>
                 <dt className="mt-1 text-sm font-medium text-slate-600">
-                  Project Completed
+                  Weiterbildung (laufend)
                 </dt>
               </div>
               <div className="rounded-xl bg-purple-50 px-4 py-4 text-center sm:text-left">
-                <dd className="text-lg font-bold text-slate-900">50+</dd>
+                <dd className="text-lg font-bold text-slate-900">4</dd>
                 <dt className="mt-1 text-sm font-medium text-slate-600">
-                  Happy Clients
+                  Sprachen (u. a. Deutsch C1)
                 </dt>
               </div>
             </dl>
@@ -64,7 +77,7 @@ export function Hero() {
             <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden rounded-2xl shadow-xl ring-1 ring-slate-100">
               <Image
                 src="/hero_img.png"
-                alt="Brooklyn Gilbert portrait"
+                alt="Porträt Ayse Tosun"
                 fill
                 className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 480px"

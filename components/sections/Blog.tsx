@@ -16,7 +16,7 @@ export function Blog() {
         <SectionHeading
           id="blog-heading"
           title="Blog"
-          subtitle="Notes on design process, collaboration, and shipping better interfaces."
+          subtitle="Kurze Notizen zu KPI, Datenqualität, Power BI und SQL — aus der Praxis einer Data Analyst."
           align="center"
         />
 
@@ -41,10 +41,10 @@ export function Blog() {
                   {post.title}
                 </h3>
                 <Link
-                  href="#"
+                  href="#kontakt"
                   className="mt-3 inline-block text-sm font-semibold text-purple-600 hover:text-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-600 rounded"
                 >
-                  Read More
+                  Mehr lesen
                 </Link>
               </div>
             </article>
@@ -54,13 +54,14 @@ export function Blog() {
         <div
           className="mt-10 flex justify-center gap-2"
           role="tablist"
-          aria-label="Blog slides"
+          aria-label="Blog-Übersicht"
         >
           {BLOG_POSTS.map((_, i) => (
             <button
               key={String(i)}
               type="button"
               role="tab"
+              aria-label={`Beitrag ${i + 1}`}
               aria-selected={active === i}
               className={`h-2.5 w-2.5 rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-600 focus-visible:ring-offset-2 ${
                 active === i ? "bg-purple-600" : "bg-slate-300"

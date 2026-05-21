@@ -8,17 +8,17 @@ export function SiteFooter() {
       <Container>
         <div className="flex flex-col items-center gap-8 text-center md:flex-row md:items-center md:justify-between md:text-left">
           <Link
-            href="#home"
+            href="#start"
             className="flex items-center gap-2 font-semibold text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 rounded-lg"
           >
             <span className="flex h-9 w-9 items-center justify-center rounded-full bg-purple-600 text-sm font-bold text-white">
-              B
+              A
             </span>
-            <span className="text-lg tracking-tight">Brooklyn</span>
+            <span className="text-lg tracking-tight">Ayse Tosun</span>
           </Link>
 
           <nav
-            aria-label="Footer"
+            aria-label="Fußzeile"
             className="flex flex-wrap justify-center gap-6 text-sm font-medium text-slate-300"
           >
             {NAV_LINKS.map((item) => (
@@ -33,7 +33,7 @@ export function SiteFooter() {
           </nav>
 
           <p className="text-sm text-slate-400">
-            © 2022 Brooklyn Gilbert. All Rights Reserved
+            © 2026 Ayse Tosun (Uysal). Alle Rechte vorbehalten.
           </p>
         </div>
       </Container>
