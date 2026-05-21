@@ -4,19 +4,24 @@ import { FormEvent } from "react";
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 import {
-  IconFacebook,
+  IconGithub,
   IconInstagram,
   IconLinkedin,
-  IconTwitter,
 } from "@/components/icons/social";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 
+const LINKEDIN_HREF = "https://www.linkedin.com/in/ayse-tosun-1a72004/";
+const GITHUB_HREF = "https://github.com/AyseTosunUysal82";
+
 const social = [
-  { Icon: IconFacebook, label: "Facebook", href: "#kontakt" },
-  { Icon: IconTwitter, label: "Twitter", href: "#kontakt" },
-  { Icon: IconLinkedin, label: "LinkedIn", href: "#kontakt" },
-  { Icon: IconInstagram, label: "Instagram", href: "#kontakt" },
+  { Icon: IconLinkedin, label: "LinkedIn", href: LINKEDIN_HREF },
+  { Icon: IconGithub, label: "GitHub", href: GITHUB_HREF },
+  {
+    Icon: IconInstagram,
+    label: "RurAktiv Düren",
+    href: "https://www.instagram.com/ruraktiv.dueren?igsh=dDVuaml3Y2d0c3ps",
+  },
 ] as const;
 
 export function Contact() {
@@ -53,9 +58,27 @@ export function Contact() {
                 Werktage.
               </p>
 
+              <p className="mt-4 text-sm leading-relaxed text-slate-600">
+                Alternativ erreichen Sie mich direkt per E-Mail unter{" "}
+                <a
+                  href="mailto:ayseuysal@gmail.com"
+                  className="font-semibold text-purple-600 hover:text-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-600 rounded break-all"
+                >
+                  ayseuysal@gmail.com
+                </a>
+                .
+              </p>
+
               <p className="mt-6 text-sm leading-relaxed text-slate-600">
                 <strong>Sprachen:</strong> Deutsch (C1-Zertifikat), Englisch
                 (gut), Niederländisch (sehr gut), Türkisch (Muttersprache).
+              </p>
+
+              <p className="mt-4 text-sm leading-relaxed text-slate-600">
+                <strong>Verfügbarkeit:</strong> Ab 1. September 2026 für eine
+                Vollzeitrolle verfügbar; offen für passende Einstiegs-,
+                Trainee-, Praktikums- oder Junior-Möglichkeiten im Bereich Data
+                Analytics / Business Intelligence.
               </p>
 
               <ul className="mt-8 space-y-5 text-slate-700">
@@ -97,16 +120,27 @@ export function Contact() {
                   <Link
                     key={label}
                     href={href}
-                    aria-label={`${label} — Kontakt`}
+                    target={href.startsWith("http") ? "_blank" : undefined}
+                    rel={
+                      href.startsWith("http")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
+                    aria-label={label}
                     className="rounded-full border border-slate-200 p-2.5 text-slate-500 transition-colors hover:border-purple-200 hover:bg-purple-50 hover:text-purple-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-600"
                   >
-                    <Icon className="h-5 w-5" />
+                    <Icon className="h-5 w-5" aria-hidden />
                   </Link>
                 ))}
               </div>
             </div>
 
             <form className="space-y-5" onSubmit={onSubmit}>
+              <p className="rounded-xl bg-slate-50 px-4 py-3 text-sm leading-relaxed text-slate-600 ring-1 ring-slate-100">
+                Hinweis: Dieses Formular ist eine Demo und versendet noch keine
+                E-Mails. Für eine direkte Anfrage nutzen Sie bitte die E-Mail
+                oben oder die Kontaktdaten links.
+              </p>
               <div>
                 <label
                   htmlFor="name"
