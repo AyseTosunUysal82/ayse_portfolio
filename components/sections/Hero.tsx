@@ -20,53 +20,63 @@ export function Hero() {
               id="hero-heading"
               className="m-0 text-4xl font-normal leading-tight tracking-tight text-slate-800 sm:text-5xl lg:text-6xl"
             >
-              <TextType
-                as="span"
-                text="Hallo, ich bin Ayse Tosun."
-                typingSpeed={55}
-                pauseDuration={2000}
-                deletingSpeed={30}
-                loop={false}
-                showCursor
-                cursorCharacter="▎"
-                cursorClassName="text-purple-500 font-light"
-                startOnVisible
-                className="text-inherit"
-              />
-            </p>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">
-              <strong>Data Analyst</strong> mit Bachelor{" "}
-              <strong>Informationstechnologie (ICT)</strong> — mit Erfahrung in
-              datengetriebenen <strong>E-Commerce</strong>-Prozessen, KPI und
-              Reporting. Aktuell vertiefe ich SQL, Python und Visualisierung im
-              intensiven <strong>Datenanalyse-Bootcamp</strong> bei{" "}
-              <strong>DataSmart Point</strong> (seit 12/2025, Remote).
-            </p>
-            <div className="mt-8">
-              <Link href="#kontakt" className={btnClass}>
-                Kontakt
-              </Link>
-            </div>
-            <dl className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
-              <div className="rounded-xl bg-purple-50 px-4 py-4 text-center sm:text-left">
-                <dd className="text-lg font-bold text-slate-900">4+</dd>
-                <dt className="mt-1 text-sm font-medium text-slate-600">
-                  Jahre E-Commerce-Daten &amp; KPI
-                </dt>
-              </div>
-              <div className="rounded-xl bg-purple-50 px-4 py-4 text-center sm:text-left">
-                <dd className="text-lg font-bold text-slate-900">Bootcamp</dd>
-                <dt className="mt-1 text-sm font-medium text-slate-600">
-                  Weiterbildung (laufend)
-                </dt>
-              </div>
-              <div className="rounded-xl bg-purple-50 px-4 py-4 text-center sm:text-left">
-                <dd className="text-lg font-bold text-slate-900">4</dd>
-                <dt className="mt-1 text-sm font-medium text-slate-600">
-                  Sprachen (u. a. Deutsch C1)
-                </dt>
-              </div>
-            </dl>
+<TextType
+  as="span"
+  text="Hallo, ich bin Ayse Tosun."
+  typingSpeed={55}
+  pauseDuration={2000}
+  deletingSpeed={30}
+  loop={false}
+  showCursor
+  cursorCharacter="|"
+  cursorClassName="text-purple-500 font-light"
+  startOnVisible
+  className="text-inherit"
+/>
+</p>
+
+<p className="mt-6 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">
+  <strong>Data Analystin</strong> mit Bachelor in{" "}
+  <strong>ICT</strong> (NL), E-Commerce-Erfahrung und abgeschlossener Data-Analyst-Weiterbildung in <strong>SQL</strong>, <strong>Python</strong>,{" "}
+  <strong>Power BI</strong> und <strong>Reporting</strong>. Ich bereite Daten so
+  auf, dass daraus klare Entscheidungen entstehen.
+</p>
+
+<div className="mt-8 flex flex-wrap gap-4">
+  <Link href="#portfolio" className={btnClass}>
+    Meine Projekte ansehen
+  </Link>
+
+  <Link
+    href="#kontakt"
+    className="inline-flex items-center justify-center rounded-full border border-purple-200 px-6 py-2.5 text-sm font-semibold text-purple-700 transition hover:bg-purple-50"
+  >
+    Mit mir in Kontakt treten
+  </Link>
+</div>
+<dl className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
+  <div className="rounded-xl bg-purple-50 px-4 py-4 text-center sm:text-left">
+    <dd className="text-lg font-bold text-slate-900">4+</dd>
+    <dt className="mt-1 text-sm font-medium text-slate-600">
+      Jahre E-Commerce-Daten &amp; KPI
+    </dt>
+  </div>
+
+  <div className="rounded-xl bg-purple-50 px-4 py-4 text-center sm:text-left">
+    <dd className="text-lg font-bold text-slate-900">6 Monate</dd>
+    <dt className="mt-1 text-sm font-medium text-slate-600">
+      Data-Analyst-Weiterbildung
+      <br />
+    </dt>
+  </div>
+
+  <div className="rounded-xl bg-purple-50 px-4 py-4 text-center sm:text-left">
+    <dd className="text-lg font-bold text-slate-900">4</dd>
+    <dt className="mt-1 text-sm font-medium text-slate-600">
+      Sprachen (u. a. Deutsch C1)
+    </dt>
+  </div>
+</dl>
           </div>
 
           <div className="relative order-1 flex justify-center lg:order-2 lg:justify-end">

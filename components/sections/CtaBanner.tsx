@@ -17,13 +17,23 @@ export function CtaBanner() {
         size={32}
         fill="rgba(255,255,255,0.08)"
       />
+
       <Container className="relative z-10 text-center">
         <h2
           id="cta-heading"
           className="mx-auto max-w-3xl text-2xl font-bold leading-snug text-white sm:text-3xl"
         >
-          Sie haben ein Datenprojekt? Lassen Sie uns sprechen.
+          Sie suchen eine motivierte Junior Data Analystin mit SQL-, Power-BI-
+          und Python-Projekterfahrung?
         </h2>
+
+        <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-slate-300 sm:text-lg">
+          Ich bringe technischen Hintergrund (ICT), praktische Business-Erfahrung
+          aus dem E-Commerce und hohe Lernbereitschaft mit — für den Einstieg in
+          Data Analytics und Business Intelligence. Gerne stelle ich Projekte und
+          Motivation in einem Gespräch vor.
+        </p>
+
         <div className="mt-8 flex justify-center">
           <Link href="#kontakt" className={ctaBtnClass}>
             Kontakt aufnehmen

@@ -7,24 +7,21 @@ export const PORTFOLIO_ITEMS = [
     category: "E-Commerce",
     description:
       "Showcase: Funnel-Kennzahlen und Abbrüche aus Bestell- und Sessiondaten.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    image: "/svb_frauen.png",
   },
   {
     title: "Sortiments- und ABC-Auswertung",
     category: "KPI",
     description:
       "Showcase: Umsatzbeitrag nach Produktgruppen mit klaren Handlungsempfehlungen.",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    image: "/HotelDemand.png",
   },
   {
     title: "Retouren- und Lieferzeit-Dashboard",
     category: "Reporting",
     description:
       "Showcase: operative Kennzahlen für Logistik und Kundenerwartung im Blick.",
-    image:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
+    image: "/schueler_foerder.png",
   },
   {
     title: "Marketingkanal-Übersicht (vereinfacht)",
