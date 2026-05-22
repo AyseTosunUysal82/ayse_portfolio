@@ -19,6 +19,8 @@ const projects = [
     focus: "Import, Cleaning, Normalisierung, KPI-Views",
     mehrwert:
       "Analysefähige Datenbasis für Reporting und Bundesländer-Vergleiche",
+    githubUrl:
+      "https://github.com/AyseTosunUysal82/data-analytics-portfolio/tree/main/SQL",
   },
   {
     title: "Hotel Demand & Revenue Analysis mit Power BI",
@@ -32,6 +34,8 @@ const projects = [
     focus: "Umsatz, Stornoquote, Segmente, Management-Storytelling",
     mehrwert:
       "Datenbasierte Bewertung von Chancen, Risiken und KPIs für Entscheider",
+    githubUrl:
+      "https://github.com/AyseTosunUysal82/data-analytics-portfolio/tree/main/PowerBI",
   },
   {
     title: "Sonderpädagogische Förderung in Deutschland mit Python",
@@ -45,6 +49,8 @@ const projects = [
     focus: "Bereinigung, Aggregation, Zeitreihen, Visualisierung",
     mehrwert:
       "Nachvollziehbare Muster in Förderquoten und Förderschwerpunkten",
+    githubUrl:
+      "https://github.com/AyseTosunUysal82/data-analytics-portfolio/tree/main/Python/Projekt_Schueler_sonderped_Foerderung",
   },
 ];
 
@@ -113,12 +119,14 @@ export function Portfolio() {
                   </div>
                 </dl>
 
-                <Link
-                  href="#kontakt"
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-6 inline-block text-sm font-semibold text-purple-600 hover:text-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-600"
                 >
-                  Projekt besprechen
-                </Link>
+                  Projekt auf GitHub ansehen
+                </a>
               </div>
             </article>
           ))}

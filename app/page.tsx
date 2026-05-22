@@ -6,6 +6,7 @@ import { ClientsTestimonials } from "@/components/sections/ClientsTestimonials";
 import { Contact } from "@/components/sections/Contact";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { Hero } from "@/components/sections/Hero";
+import { Certificates } from "@/components/sections/Certificates";
 import { Portfolio } from "@/components/sections/Portfolio";
 import { Services } from "@/components/sections/Services";
 import { SiteFooter } from "@/components/sections/SiteFooter";
@@ -22,6 +23,7 @@ export default function Home() {
   <About />
   {/* <WorkProcess /> */}
   <Skills />
+  <Certificates />
   <Portfolio />
   <Engagement />
   <CtaBanner />
