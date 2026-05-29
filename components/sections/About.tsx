@@ -83,13 +83,15 @@ export function About() {
                   Kontakt
                 </Link>
 
-                <Link
-                  href="/Ayse_Tosun_Lebenslauf.pdf"
+                <a
+                  href="/Ayse_Tosun_Lebenslauf_30_05_2026.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm font-semibold text-purple-600 hover:text-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2"
                 >
                   <Download className="h-4 w-4" aria-hidden />
                   Lebenslauf herunterladen
-                </Link>
+                </a>
               </div>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import { Award, Download, GraduationCap } from "lucide-react";
+import { Award, Download, FileText, GraduationCap } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
@@ -14,6 +14,21 @@ const certificates = [
     badges: ["SQL", "Python", "Power BI", "DAX", "Reporting", "Datenvisualisierung"],
     buttonText: "Zertifikat ansehen",
     href: "/Ayse-Tosun-5e00.pdf",
+  },
+  {
+    icon: FileText,
+    title: "Python-Zertifikat",
+    label: "Abgeschlossen · Python / Data Analytics",
+    text: "Zertifikat zur Vertiefung meiner Python-Kenntnisse im Bereich Datenanalyse. Der Fokus liegt auf Datenaufbereitung, Analyse, Auswertung und praxisnaher Anwendung mit Python.",
+    badges: [
+      "Python",
+      "pandas",
+      "Datenanalyse",
+      "Datenaufbereitung",
+      "Visualisierung",
+    ],
+    buttonText: "Python-Zertifikat ansehen",
+    href: "/Ayse-Tosun-a59d.pdf",
   },
   {
     icon: GraduationCap,
@@ -41,7 +56,7 @@ export function Certificates() {
           align="center"
         />
 
-        <div className="mt-12 grid gap-8 lg:grid-cols-2">
+        <div className="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           {certificates.map(
             ({ icon: Icon, title, label, text, badges, buttonText, href }) => (
               <article
